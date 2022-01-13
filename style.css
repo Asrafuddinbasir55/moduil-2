@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Spline+Sans&display=swap');
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    /* margin: 0;
+    padding: 0; */
+    /* box-sizing: border-box; */
 }
 
 body
 {
     background-color: #f3f1ff;
     font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    margin-bottom: 70px;
 }
 
 .top-class{
@@ -31,9 +35,22 @@ body
 .button{
     text-decoration: none;
     background-color: #B9345A;
-    padding: 8px;
+    /* width: 30px; */
+    padding: 10px;
     color: white;
-    border-radius: 15px;
+    
+    border-radius: 25px;
+   
+}
+
+.button .fa-arrow-right{
+    margin-left: 5px;
+}
+
+
+.product-heading{
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .camera img{
@@ -43,30 +60,57 @@ body
 }
 
 
+/* hjksdfjhkasdfk  */
+
+.second-container{
+    margin-bottom: 30px;
+}
+
+
+
+
+
 
 
 .details{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 1px;
+    
+    grid-column-gap: 10px;
 }
 
 
 .information{
-   width: 340px;
-   margin: 10px;
-   padding: 20px;
+   width: 280px;
+   height: 450px;
+   margin: 8px;
+   padding: 15px;
    box-sizing: border-box;
-   box-shadow: 5px 4px 8px black;
+   box-shadow: 3px 3px 6px black;
    background-color: #ffffff;
+}
+
+.information img{
+    width: 250px;
+    height: 150px;
+}
+
+.third-container{
+  margin-bottom: 30px;
+}
+
+
+.click{
+    text-align: right;
+    color: #B9345A;
+    padding-left: 2px;
 }
 
 
 
 
 
-
-
+   /* footer design */
 
 
 footer{
@@ -140,3 +184,41 @@ footer{
     text-transform: uppercase;
     font-weight: 200;
 }
+
+
+
+/* media queries */
+
+
+  /* Mobile devices */
+
+
+  @media (max-width:688px) {
+
+    .container{
+      width: 100%;
+    }
+
+    .products, .details{
+       
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .product{
+        flex-direction: column;
+    }
+  }
+
+
+  /* tablet devices */
+
+
+  @media (min-width:688px) and (max-width:992px) {
+        
+       .container{
+            width: 100%;
+       }
+        .products, .details{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }

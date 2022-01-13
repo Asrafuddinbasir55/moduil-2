@@ -38,7 +38,7 @@ body
     /* width: 30px; */
     padding: 10px;
     color: white;
-    
+    text-align: center;
     border-radius: 25px;
    
 }
@@ -96,6 +96,7 @@ body
 }
 
 .third-container{
+    
   margin-bottom: 30px;
 }
 
@@ -109,11 +110,48 @@ body
 
 
 
+/* gasdjfkdfjksdjkksjd */
+
+.form-heading{
+    text-align: center;
+}
+
+
+.flex-box{
+    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 10%;
+    margin-top: 30px;
+   
+    
+     
+}
+
+.contect{
+   
+    padding-left: 40px;
+    padding-right: 70px;
+    align-content: center;
+   
+}
+
+.send-message, .button{
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/* .send-message{
+    text-align: center;
+    
+   
+} */
 
    /* footer design */
 
 
 footer{
+   
     background-color: #03203C;
     height: auto;
     width: 100%;
@@ -123,6 +161,7 @@ footer{
 }
 
 .footer-content{
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -199,7 +238,7 @@ footer{
       width: 100%;
     }
 
-    .products, .details{
+    .products, .details, .flex-box{
        
         grid-template-columns: repeat(1, 1fr);
     }
